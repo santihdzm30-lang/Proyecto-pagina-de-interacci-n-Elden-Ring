@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring - Petición de Figuras</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts (Cinzel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Hoja de Estilos Personalizada -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-2" href="index.html">ELDEN RING</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes y Jefes</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="peticiones.html">Petición de Figuras</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado de Sección -->
+    <header class="container text-center my-4">
+        <h1 class="display-3 fw-bold text-warning">MESA REDONDA DE PETICIONES</h1>
+        <p class="lead fs-4 text-light">Solicita la forja de tu jefe o personaje favorito a escala coleccionable premium.</p>
+        
+        <!-- Indicador de Progreso -->
+        <div class="d-flex justify-content-center align-items-center gap-3 my-4">
+            <span class="badge bg-warning text-dark fs-6 px-3 py-2"><i class="bi bi-person-fill"></i> 1. Datos</span>
+            <i class="bi bi-chevron-right text-warning"></i>
+            <span class="badge bg-warning text-dark fs-6 px-3 py-2"><i class="bi bi-shield-shaded"></i> 2. Elección</span>
+            <i class="bi bi-chevron-right text-warning"></i>
+            <span class="badge bg-warning text-dark fs-6 px-3 py-2"><i class="bi bi-check-circle-fill"></i> 3. Envío</span>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container my-4 mb-5">
+        <div class="row g-4">
+            
+            <!-- Formulario Principal -->
+            <div class="col-lg-7">
+                <div class="p-4 p-md-5 rounded-3 shadow-lg" style="background: rgba(18, 15, 23, 0.95); border: 2px solid #c5a059;">
+                    <form id="formPeticion" onsubmit="enviarPeticion(event)">
+                        
+                        <!-- Sección 1: Datos Personales -->
+                        <h3 class="text-warning border-bottom border-warning pb-2 mb-4"><i class="bi bi-journal-text me-2"></i>Información del Sinluz</h3>
+                        
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label text-light fs-5">Nombre Completo:</label>
+                            <input type="text" class="form-control form-control-lg bg-dark text-light border-warning" id="nombre" placeholder="Ej: Vyke, las Huellas de la Llama" required oninput="actualizarVistaPrevia()">
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="correo" class="form-label text-light fs-5">Correo Electrónico:</label>
+                                <input type="email" class="form-control form-control-lg bg-dark text-light border-warning" id="correo" placeholder="sinluz@tierrasintermedias.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Desplegable de País de Origen -->
+                                <label for="pais" class="form-label text-light fs-5">País de Origen:</label>
+                                <select class="form-select form-select-lg bg-dark text-light border-warning" id="pais" required onchange="actualizarVistaPrevia()">
+                                    <option value="" disabled selected>Selecciona tu país...</option>
+                                    <option value="Argentina">🇦🇷 Argentina</option>
+                                    <option value="Bolivia">🇧🇴 Bolivia</option>
+                                    <option value="Brasil">🇧🇷 Brasil</option>
+                                    <option value="Chile">🇨🇱 Chile</option>
+                                    <option value="Colombia">🇨🇴 Colombia</option>
+                                    <option value="Costa Rica">🇨🇷 Costa Rica</option>
+                                    <option value="Cuba">🇨🇺 Cuba</option>
+                                    <option value="Ecuador">🇪🇨 Ecuador</option>
+                                    <option value="El Salvador">🇸🇻 El Salvador</option>
+                                    <option value="Guatemala">🇬🇹 Guatemala</option>
+                                    <option value="Haití">🇭🇹 Haití</option>
+                                    <option value="Honduras">🇭🇳 Honduras</option>
+                                    <option value="México">🇲🇽 México</option>
+                                    <option value="Nicaragua">🇳🇮 Nicaragua</option>
+                                    <option value="Panamá">🇵🇦 Panamá</option>
+                                    <option value="Paraguay">🇵🇾 Paraguay</option>
+                                    <option value="Perú">🇵🇪 Perú</option>
+                                    <option value="Puerto Rico">🇵🇷 Puerto Rico</option>
+                                    <option value="República Dominicana">🇩🇴 República Dominicana</option>
+                                    <option value="Uruguay">🇺🇾 Uruguay</option>
+                                    <option value="Venezuela">🇻🇪 Venezuela</option>
+                                    <option value="Belice">🇧🇿 Belice</option>
+                                    <option value="Guyana">🇬🇾 Guyana</option>
+                                    <option value="Surinam">🇸🇷 Surinam</option>
+                                    <option value="Guayana Francesa">🇬🇫 Guayana Francesa</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Sección 2: Configuración de la Figura -->
+                        <h3 class="text-warning border-bottom border-warning pb-2 my-4"><i class="bi bi-gem me-2"></i>Detalles de la Figura</h3>
+
+                        <!-- Desplegable de Personajes -->
+                        <div class="mb-3">
+                            <label for="personaje" class="form-label text-light fs-5">Jefe o Personaje Favorito:</label>
+                            <select class="form-select form-select-lg bg-dark text-light border-warning" id="personaje" required onchange="actualizarVistaPrevia()">
+                                <option value="" disabled selected>Selecciona un personaje...</option>
+                                <optgroup label="I. SEMIDIOSES Y LINAJE REAL">
+                                    <option value="Miquella el Bondadoso">Miquella el Bondadoso</option>
+                                    <option value="Malenia, la Espada de Miquella">Malenia, la Espada de Miquella</option>
+                                    <option value="Messmer el Empalador">Messmer el Empalador</option>
+                                    <option value="Radahn, el Azote de las Estrellas">Radahn, el Azote de las Estrellas</option>
+                                    <option value="Ranni la Bruja">Ranni la Bruja</option>
+                                    <option value="Rykard, el Señor de la Blasphemia">Rykard, el Señor de la Blasphemia</option>
+                                    <option value="Godwyn, el Dorado">Godwyn, el Dorado</option>
+                                    <option value="Morgott, el Rey de los Augurios">Morgott, el Rey de los Augurios</option>
+                                    <option value="Mohg, el Señor de la Sangre">Mohg, el Señor de la Sangre</option>
+                                </optgroup>
+                                <optgroup label="II. ENTIDADES Y SEÑORES DE LA NOCHE ETERNA">
+                                    <option value="Gladius, la Bestia de la Noche">Gladius, la Bestia de la Noche</option>
+                                    <option value="Adel, el Barón de la Noche">Adel, el Barón de la Noche</option>
+                                    <option value="Gnoster, la Sabiduría de la Noche">Gnoster, la Sabiduría de la Noche</option>
+                                    <option value="Maris, la Profundidad de la Noche">Maris, la Profundidad de la Noche</option>
+                                    <option value="Libra, la Criatura del Equilibrio">Libra, la Criatura del Equilibrio</option>
+                                    <option value="Fulgor, el Campeón del Brillo Nocturno">Fulgor, el Campeón del Brillo Nocturno</option>
+                                    <option value="Caligo, el Miasma de la Noche">Caligo, el Miasma de la Noche</option>
+                                    <option value="Balancers, la Armonía de la Noche">Balancers, la Armonía de la Noche</option>
+                                    <option value="El Señor de la Escoria">El Señor de la Escoria</option>
+                                    <option value="Heolstor el Señor de la Noche">Heolstor el Señor de la Noche</option>
+                                </optgroup>
+                                <optgroup label="III. JEFES ACLAMADOS POR LA AUDIENCIA">
+                                    <option value="El soldado de Godrick">El soldado de Godrick</option>
+                                    <option value="Godfrey, el Primer Señor del Círculo">Godfrey, el Primer Señor del Círculo</option>
+                                    <option value="Astel, la Aberración Nacida del Vacío">Astel, la Aberración Nacida del Vacío</option>
+                                    <option value="El Señor Dragón, Placidusax">El Señor Dragón, Placidusax</option>
+                                    <option value="Bayle, el Temible">Bayle, el Temible</option>
+                                    <option value="Maliketh, el Portador de la Hoja Negra">Maliketh, el Portador de la Hoja Negra</option>
+                                    <option value="Radahn, Consorte Prometido">Radahn, Consorte Prometido</option>
+                                </optgroup>
+                                <option value="Otro Personaje / No listado">Otro Personaje / No listado</option>
+                            </select>
+                        </div>
+
+                        <!-- Escala -->
+                        <div class="mb-3">
+                            <label class="form-label text-light fs-5">Escala Recomendada:</label>
+                            <div class="d-flex gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="escala" id="escala1" value="Escala 1/10 (20cm)" checked onchange="actualizarVistaPrevia()">
+                                    <label class="form-check-label text-light" for="escala1">1/10 (20 cm)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="escala" id="escala2" value="Escala 1/6 (30cm)" onchange="actualizarVistaPrevia()">
+                                    <label class="form-check-label text-light" for="escala2">1/6 (30 cm)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="escala" id="escala3" value="Escala 1/4 (45cm)" onchange="actualizarVistaPrevia()">
+                                    <label class="form-check-label text-light" for="escala3">1/4 (45 cm)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Acabado / Pintura -->
+                        <div class="mb-3">
+                            <label for="acabado" class="form-label text-light fs-5">Estilo de Acabado:</label>
+                            <select class="form-select bg-dark text-light border-warning" id="acabado" onchange="actualizarVistaPrevia()">
+                                <option value="Pintado a Mano Premium (Fiel al juego)">Pintado a Mano Premium (Fiel al juego)</option>
+                                <option value="Efecto Bronce Antiguo Místico">Efecto Bronce Antiguo Místico</option>
+                                <option value="Resina Traslúcida con LED">Resina Traslúcida con LED</option>
+                                <option value="Sin Pintar (DIY Kit de Ensamblaje)">Sin Pintar (DIY Kit de Ensamblaje)</option>
+                            </select>
+                        </div>
+
+                        <!-- Presupuesto Estimado -->
+                        <div class="mb-4">
+                            <label for="presupuesto" class="form-label text-light fs-5">Presupuesto Máximo Estimado (Mex): $<span id="presupuestoVal" class="text-warning fw-bold">150</span></label>
+                            <input type="range" class="form-range" id="presupuesto" min="50" max="500" step="10" value="150" oninput="document.getElementById('presupuestoVal').textContent = this.value; actualizarVistaPrevia();">
+                        </div>
+
+                        <!-- Comentarios Adicionales -->
+                        <div class="mb-4">
+                            <label for="detalles" class="form-label text-light fs-5">Detalles o Pose Especial (Opcional):</label>
+                            <textarea class="form-control bg-dark text-light border-warning" id="detalles" rows="3" placeholder="Ej: Me gustaría que Malenia esté en posición de realizar la Danza de las Espadas..."></textarea>
+                        </div>
+
+                        <!-- Botón Enviar -->
+                        <button type="submit" class="btn btn-elden btn-lg w-100 py-3 fs-4 shadow"><i class="bi bi-send-fill me-2"></i>Enviar Petición a la Mesa Redonda</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Columna Secundaria: Vista Previa -->
+            <div class="col-lg-5">
+                <!-- Tarjeta de Previsualización Dinámica -->
+                <div class="card bg-dark text-light border-warning shadow-lg sticky-top" style="top: 90px; border: 2px solid #c5a059;">
+                    <div class="card-header bg-warning text-dark font-weight-bold text-center fs-5 fw-bold">
+                        <i class="bi bi-eye-fill me-2"></i>Previsualización de la Petición
+                    </div>
+                    <div class="card-body p-4">
+                        <h4 class="text-warning id-personaje mb-3" id="prevPersonaje">Selecciona un personaje</h4>
+                        
+                        <ul class="list-group list-group-flush bg-transparent">
+                            <li class="list-group-item bg-transparent text-light border-secondary">
+                                <strong class="text-warning"><i class="bi bi-person me-2"></i>Solicitante:</strong> <span id="prevNombre">Por definir</span>
+                            </li>
+                            <li class="list-group-item bg-transparent text-light border-secondary">
+                                <strong class="text-warning"><i class="bi bi-geo-alt me-2"></i>País:</strong> <span id="prevPais">No seleccionado</span>
+                            </li>
+                            <li class="list-group-item bg-transparent text-light border-secondary">
+                                <strong class="text-warning"><i class="bi bi-aspect-ratio me-2"></i>Escala:</strong> <span id="prevEscala">Escala 1/10 (20cm)</span>
+                            </li>
+                            <li class="list-group-item bg-transparent text-light border-secondary">
+                                <strong class="text-warning"><i class="bi bi-paint-bucket me-2"></i>Acabado:</strong> <span id="prevAcabado">Pintado a Mano Premium (Fiel al juego)</span>
+                            </li>
+                            <li class="list-group-item bg-transparent text-light border-secondary">
+                                <strong class="text-warning"><i class="bi bi-currency-dollar me-2"></i>Presupuesto:</strong> $<span id="prevPresupuesto">150</span> Mex
+                            </li>
+                        </ul>
+
+                        <div class="mt-4 p-3 rounded text-center" style="background: rgba(197, 160, 89, 0.1); border: 1px dashed #c5a059;">
+                            <small class="text-warning"><i class="bi bi-info-circle me-1"></i> Las peticiones con más votos en tu país tendrán prioridad de modelado 3D.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botones de Navegación Secundaria -->
+        <div class="row mt-4 g-2">
+            <div class="col-md-6">
+                <a href="personajes.html" class="btn btn-elden btn-lg w-100 fs-6">¿Sin poder decidir? Vuelve a consultar su ficha.</a>
+            </div>
+            <div class="col-md-6">
+                <a href="index.html" class="btn btn-secondary btn-lg w-100 fs-6">Volver al inicio</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal de Confirmación de Envío -->
+    <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-warning" style="border: 2px solid #c5a059;">
+                <div class="modal-header border-warning text-center">
+                    <h5 class="modal-title text-warning fs-3 w-100"><i class="bi bi-check-circle-fill text-success me-2"></i>¡Petición Recibida!</h5>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <p class="fs-4">Que la Gracia te acompañe, <strong id="modalNombre" class="text-warning">Sinluz</strong>.</p>
+                    <p class="fs-5">Hemos registrado tu voto para forjar a <strong id="modalPersonaje" class="text-warning">tu personaje</strong> hacia <strong id="modalPais" class="text-warning">tu país</strong>.</p>
+                    <p class="text-muted">Te notificaremos por correo electrónico cuando la producción alcance la meta de firmas.</p>
+                </div>
+                <div class="modal-footer border-warning justify-content-center">
+                    <button type="button" class="btn btn-elden px-4" data-bs-dismiss="modal">Aceptar y Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-light mt-auto">
+        <div class="container">
+            <p class="mb-0 fs-5">&copy; 2026 Compendio Sin Luz - Colección Oficial de las Tierras Intermedias.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script de Interacción Dinámica -->
+    <script>
+        function actualizarVistaPrevia() {
+            const nombre = document.getElementById('nombre').value || 'Por definir';
+            const pais = document.getElementById('pais').value || 'No seleccionado';
+            const personaje = document.getElementById('personaje').value || 'Selecciona un personaje';
+            const acabado = document.getElementById('acabado').value;
+            const presupuesto = document.getElementById('presupuesto').value;
+            
+            const escalaEl = document.querySelector('input[name="escala"]:checked');
+            const escala = escalaEl ? escalaEl.value : 'Escala 1/10 (20cm)';
+
+            document.getElementById('prevNombre').textContent = nombre;
+            document.getElementById('prevPais').textContent = pais;
+            document.getElementById('prevPersonaje').textContent = personaje;
+            document.getElementById('prevAcabado').textContent = acabado;
+            document.getElementById('prevPresupuesto').textContent = presupuesto;
+            document.getElementById('prevEscala').textContent = escala;
+        }
+
+        function enviarPeticion(e) {
+            e.preventDefault();
+            
+            document.getElementById('modalNombre').textContent = document.getElementById('nombre').value;
+            document.getElementById('modalPersonaje').textContent = document.getElementById('personaje').value;
+            document.getElementById('modalPais').textContent = document.getElementById('pais').value;
+
+            const modal = new bootstrap.Modal(document.getElementById('modalConfirmacion'));
+            modal.show();
+
+            document.getElementById('formPeticion').reset();
+            document.getElementById('presupuestoVal').textContent = '150';
+            actualizarVistaPrevia();
+        }
+    </script>
+</body>
+</html>

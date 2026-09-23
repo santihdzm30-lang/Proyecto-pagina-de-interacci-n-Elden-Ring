@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring - Círculo de Elden | Inicio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts (Cinzel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de Estilos Personalizada -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-2" href="index.html">ELDEN RING</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes y Jefes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="peticiones.html">Petición de Figuras</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Hero Principal -->
+    <header class="container text-center my-5 py-4">
+        <h1 class="display-1 fw-bold mb-3">LAS TIERRAS INTERMEDIAS</h1>
+        <p class="lead fs-3 text-light mx-auto mb-4" style="max-width: 800px;">
+            Bienvenido al compendio definitivo. Explora la historia, habilidades y conoce las leyendas de seres que gobiernan las tierras intermedias.
+        </p>
+    </header>
+
+    <!-- Cita Mítica de Introducción -->
+    <section class="container my-5 text-center">
+        <div class="p-4 rounded-3" style="background: rgba(18, 15, 23, 0.85); border: 2px solid #c5a059;">
+            <blockquote class="blockquote mb-0 fs-3 text-warning fst-italic">
+                "Levántate, Sinluz. Guiado por la Gracia perdida, alza el Círculo de Elden y conviértete en el Señor del Círculo."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Carrusel de Jefes Destacados -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4 display-5">Los Jefes más Poderosos rodeados de misterios y tragedias</h2>
+        
+        <div id="heroCarousel" class="carousel slide shadow-lg rounded-3 overflow-hidden border border-warning" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Slide 1: Malenia -->
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="https://imgs.search.brave.com/ERg0uFJQrEmj4ukErFy_fnSmkAF14zn5qAV29kwrkBI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZXJ2/ZXIud2FsbHBhcGVy/YWxjaGVteS5jb20v/c3RvcmFnZS93YWxs/cGFwZXJzLzMxNC9l/bGRlbi1yaW5nLW1h/bGVuaWEtNGstd2Fs/bHBhcGVyLmpwZw" class="d-block w-100" style="height: 480px; object-fit: cover;" alt="Malenia">
+                    <div class="carousel-caption d-none d-md-block p-3 rounded-3" style="background: rgba(10, 8, 15, 0.85); border-top: 2px solid #c5a059;">
+                        <h3 class="text-warning">Malenia, Espada de Miquella</h3>
+                        <p class="fs-5 text-light">La guerrera invicta afligida por la Putrefacción Roja. Maestra indiscutible del arte de la espada.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Radahn -->
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://imgs.search.brave.com/cPNIXwNuOZ_Bz6ZmV1wZDrhZp1e9PDulDUNJ57WKwTY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMyLmFscGhhY29k/ZXJzLmNvbS8xMzgv/dGh1bWItMTkyMC0x/Mzg1MTg2LnBuZw" class="d-block w-100" style="height: 480px; object-fit: cover;" alt="Radahn">
+                    <div class="carousel-caption d-none d-md-block p-3 rounded-3" style="background: rgba(10, 8, 15, 0.85); border-top: 2px solid #c5a059;">
+                        <h3 class="text-warning">General Radahn, Azote de las Estrellas</h3>
+                        <p class="fs-5 text-light">El semidiós más poderoso en fuerza gravitacional que detuvo el destino de los astros en el firmamento.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Messmer -->
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://imgs.search.brave.com/DOmPsqCH2vST61uvv0jDSOJxdcBjroHL4x4tn4ZAmDY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHNpby5nbndjZG4u/Y29tL2VsZGVuLXJp/bmctc290ZS1tZXNz/bWVyLTIucG5nP3dp/ZHRoPTIwNDgmaGVp/Z2h0PTIwNDgmZml0/PWJvdW5kcyZxdWFs/aXR5PTg1JmZvcm1h/dD1qcGcmYXV0bz13/ZWJw" class="d-block w-100" style="height: 480px; object-fit: cover;" alt="Messmer">
+                    <div class="carousel-caption d-none d-md-block p-3 rounded-3" style="background: rgba(10, 8, 15, 0.85); border-top: 2px solid #c5a059;">
+                        <h3 class="text-warning">Messmer el Empalador</h3>
+                        <p class="fs-5 text-light">Soberano del fuego serpenteante en el Reino de las Sombras, portador de la lanza purificadora.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Ranni -->
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://imgs.search.brave.com/09GnzDB8QXUVL740Mp4ZDBxmtopNYyT0LsTH74gqGQ0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L3lX/NDIzQkVjTEx3ek16/UUxYWEFvRUIuanBn" class="d-block w-100" style="height: 480px; object-fit: cover;" alt="Ranni">
+                    <div class="carousel-caption d-none d-md-block p-3 rounded-3" style="background: rgba(10, 8, 15, 0.85); border-top: 2px solid #c5a059;">
+                        <h3 class="text-warning">Ranni la Bruja</h3>
+                        <p class="fs-5 text-light">Arquitecta de la Noche de los Cuchillos Negros y guía hacia la Era de las Estrellas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles del Carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Contador de Estadísticas del Sitio -->
+    <section class="container my-5">
+        <div class="row g-4 text-center">
+            <div class="col-md-3 col-6">
+                <div class="p-4 rounded-3 h-100" style="background: rgba(18, 15, 23, 0.9); border: 1px solid #c5a059;">
+                    <h2 class="display-4 fw-bold text-warning mb-1">16+</h2>
+                    <p class="fs-5 text-light mb-0">Jefes Detallados</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-4 rounded-3 h-100" style="background: rgba(18, 15, 23, 0.9); border: 1px solid #c5a059;">
+                    <h2 class="display-4 fw-bold text-warning mb-1">100%</h2>
+                    <p class="fs-5 text-light mb-0">Datos Curiosos</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-4 rounded-3 h-100" style="background: rgba(18, 15, 23, 0.9); border: 1px solid #c5a059;">
+                    <h2 class="display-4 fw-bold text-warning mb-1">1/6</h2>
+                    <p class="fs-5 text-light mb-0">Escala de Figuras</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-4 rounded-3 h-100" style="background: rgba(18, 15, 23, 0.9); border: 1px solid #c5a059;">
+                    <h2 class="display-4 fw-bold text-warning mb-1">24/7</h2>
+                    <p class="fs-5 text-light mb-0">Atención Sinluz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarjetas de Navegación Rápida -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4 display-5">Secciones Principales</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-6">
+                <div class="card h-100 text-white border-warning overflow-hidden" style="background: rgba(18, 15, 23, 0.9); border: 2px solid #c5a059;">
+                    <img src="https://imgs.search.brave.com/7Ule3SKhbBwuaqZff9dcrcv7K0XD-nGO3Rf-TYHSd8E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvNTAw/NTI4MDIuanBn" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Personajes">
+                    <div class="card-body p-4 text-center">
+                        <h3 class="card-title text-warning">Galería Interactiva de Personajes</h3>
+                        <p class="card-text fs-5">Descubre tarjetas desplegables con historia, habilidades, imágenes y datos curiosos de cada leyenda.</p>
+                        <a href="personajes.html" class="btn btn-elden btn-lg mt-2 w-100">Ver Personajes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 text-white border-warning overflow-hidden" style="background: rgba(18, 15, 23, 0.9); border: 2px solid #c5a059;">
+                    <img src="https://imgs.search.brave.com/Z-alv-FJnH9Fx72PCk1LlvRgzWj8ZgY8o7okgk2Y7eM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnJl/ZGQuaXQvODZwZ3Fu/YjN3aDQ3MS5wbmc" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Figuras">
+                    <div class="card-body p-4 text-center">
+                        <h3 class="card-title text-warning">Encargo de Figuras Coleccionables</h3>
+                        <p class="card-text fs-5">Envía tus peticiones a la Mesa Redonda para votar por la producción de tus jefes favoritos a escala.</p>
+                        <a href="peticiones.html" class="btn btn-elden btn-lg mt-2 w-100">Solicitar Figura</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-light mt-auto">
+        <div class="container">
+            <p class="mb-0 fs-5">&copy; 2026 Compendio Sin Luz - Colección Oficial de las Tierras Intermedias.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

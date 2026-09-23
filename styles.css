@@ -1,0 +1,106 @@
+/* Fondo de las Tierras Intermedias con mayor visibilidad */
+body {
+    background: linear-gradient(rgba(10, 8, 15, 0.50), rgba(10, 8, 15, 0.65)), 
+                url('https://res.cloudinary.com/cook-becker/image/fetch/q_auto:good,f_auto,w_1920/https://candb.com/site/candb/images/artwork/elden-ring-view-on-tree-from-the-sea.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f8f9fa; /* Blanco cálido brillante para máxima legibilidad */
+    font-family: 'Cinzel', serif, system-ui;
+    font-size: 1.1rem; /* Texto más grande */
+}
+
+/* Títulos en dorado brillante con sombra para resaltar */
+h1, h2, h3, h4, .navbar-brand {
+    color: #ffe082 !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 12px rgba(255, 224, 130, 0.5);
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(10, 8, 15, 0.9) !important;
+    border-bottom: 2px solid #c5a059;
+}
+
+.nav-link {
+    font-size: 1.15rem;
+    color: #e0e0e0 !important;
+}
+
+.nav-link.actzive, .nav-link:hover {
+    color: #ffe082 !important;
+    font-weight: bold;
+}
+
+/* Tarjetas y Acordeones Desplegables */
+.accordion-item {
+    background-color: rgba(18, 15, 23, 0.88) !important;
+    border: 1px solid #c5a059 !important;
+    margin-bottom: 15px;
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: rgba(28, 24, 36, 0.95) !important;
+    color: #ffe082 !important;
+    font-size: 1.25rem;
+    font-weight: bold;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #2a2335 !important;
+    color: #fff !important;
+    border-bottom: 1px solid #c5a059;
+}
+
+.accordion-button::after {
+    filter: invert(1); /* Cambia la flecha a blanco */
+}
+
+.accordion-body {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilo para las imágenes de los personajes dentro del desplegable */
+.boss-img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border: 2px solid #c5a059;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Cuadro para Datos Curiosos */
+.fact-box {
+    background-color: rgba(197, 160, 89, 0.15);
+    border-left: 4px solid #ffe082;
+    padding: 12px 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* Botones */
+.btn-elden {
+    background-color: #8c6d2d;
+    color: #ffffff;
+    border: 1px solid #ffe082;
+    font-size: 1.15rem;
+    padding: 10px 24px;
+}
+
+.btn-elden:hover {
+    background-color: #ffe082;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(5, 4, 7, 0.95);
+    border-top: 2px solid #c5a059;
+    font-size: 1.05rem;
+}

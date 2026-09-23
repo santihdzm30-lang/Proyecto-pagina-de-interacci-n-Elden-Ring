@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes y Jefes - Elden Ring</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts (Cinzel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos personalizada -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-2" href="index.html">ELDEN RING</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="personajes.html">Personajes y Jefes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="peticiones.html">Petición de Figuras</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container my-5">
+        <h1 class="text-center mb-2">Compendio de Leyendas</h1>
+        <p class="text-center mb-5 fs-4 text-light">Haz clic sobre cualquier personaje para desplegar su ficha técnica, imagen e historia.</p>
+
+        <!-- SECCIÓN 1: SEMIDIOSES Y PRINCIPALES -->
+        <h3 class="border-bottom border-warning pb-2 mb-4">I. Semidioses y Linaje Real</h3>
+        <div class="accordion mb-5" id="accordionSemidioses">
+
+            <!-- Miquella -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#miquella">
+                        Miquella El Bondadoso
+                    </button>
+                </h2>
+                <div id="miquella" class="accordion-collapse collapse" data-bs-parent="#accordionSemidioses">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/2EscH4mHsmpLJMN85Z2mb2gsXrvGnuhsqlKnIDEnSuI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nYmFp/a2UtaW1hZ2UuY2Ru/LmJjZWJvcy5jb20v/YWM0YmQxMTM3M2Yw/ODIwMjVhYWZmMDQw/YzlhMWVjZWRhYjY0/MDM0ZmFkMDAvYWM0/YmQxMTM3M2YwODIw/MjVhYWZmMDQwYzlh/MWVjZWRhYjY0MDM0/ZmFkMDBfdXJsP3gt/YmNlLXByb2Nlc3M9/aW1hZ2UvZm9ybWF0/LGZfYXV0by9yZXNp/emUsbV9sZml0LGhf/MTAyNCxsaW1pdF8x" class="boss-img img-fluid rounded" alt="Miquella">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Miquella el Bondadoso</h4>
+                                <p><strong>Historia:</strong> Hijo de Marika y Radagon que fue maldecido con la juventud eterna, buscó crear el Árbol Hierático para sanar a su hermana Malenia y refugiar a los desamparados.</p>
+                                <p><strong>Habilidades:</strong> Es el ser con mejor manejo de la luz dorada, puede crear encantamientos de seducción y anular la influencia de dioses exteriores.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Es el único semidiós capaz de obligar a otros a amarlo mediante encantamientos sutiles de su aura sagrada.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Malenia -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#malenia">
+                        Malenia, la espada de Miquella
+                    </button>
+                </h2>
+                <div id="malenia" class="accordion-collapse collapse" data-bs-parent="#accordionSemidioses">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://static0.fextralifeimages.com/file/eldenring/7/7e/Malenia%2C-blade-of-miquella.png?version=3a90a9d13fc5f6a05c29e8e11ddd6009" class="boss-img img-fluid rounded" alt="Malenia">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Malenia, Espada de Miquella</h4>
+                                <p><strong>Historia:</strong> La semidiosa que nació con la maldición de la Putrefacción Escarlata. Aprendió combate de espada y esgrima, volviéndose la semidiosa más peligrosa por ser implacable en combate, luchando sin descanso para proteger los objetivos de su hermano Miquella.</p>
+                                <p><strong>Habilidades:</strong> La Danza del agua, regeneración de salud al golpear a un enemigo y su transformación en la Diosa de la Putrefacción.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> A pesar de estar ciega y faltarle tres extremidades, nunca conoció la derrota en combate directo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messmer -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#messmer">
+                        Messmer El Empalador
+                    </button>
+                </h2>
+                <div id="messmer" class="accordion-collapse collapse" data-bs-parent="#accordionSemidioses">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/I9hGbjPYQfoo1AfdMIPae9xWmxPzBuGC4yVFy7QHfYk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW1tZWRpYXRl/LmNvLnVrL3Byb2R1/Y3Rpb24vdm9sYXRp/bGUvc2l0ZXMvMy8y/MDI0LzA2L3JhZGlv/LXRpbWVzLWVsZGVu/LXJpbmctc2hhZG93/LW9mLXRoZS1lcmR0/cmVlLWRsYy1kNGJi/ZGNkLmpwZz9xdWFs/aXR5PTkwJnJlc2l6/ZT05ODAsNjU0" class="boss-img img-fluid rounded" alt="Messmer">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Messmer el Empalador</h4>
+                                <p><strong>Historia:</strong> Fue el primogénito oculto de Marika, enviado a purgar a todos los cornamentados del Reino de las Sombras haciéndolos sufrir al empalarlos y quemarlos con "La llama de Messmer".</p>
+                                <p><strong>Habilidades:</strong> Utiliza una Lanza empaladora, puede invocar llamas de la serpiente abisal y realiza invocaciones en forma de serpientes titánicas.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Lleva un sello dentro de su ojo derecho colocado por su propia madre para contener a una serpiente primigenia que habita dentro de él.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Radahn General -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#radahnGen">
+                        Radahn, El azote de las estrellas
+                    </button>
+                </h2>
+                <div id="radahnGen" class="accordion-collapse collapse" data-bs-parent="#accordionSemidioses">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/u_J1peUt2nDbp8LOlv_WMMVRrjKpk0N1J5ysRuvnWH8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3JlYXRpdmV1bmN1/dC5jb20vZ2FsbGVy/eS00My9hcnQvZXIt/c3RhcnNjb3VyZ2Ut/cmFkYWhuLmpwZw" class="boss-img img-fluid rounded" alt="Radahn Starscourge">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>General Radahn, Azote de las Estrellas</h4>
+                                <p><strong>Historia:</strong> Considerado el semidiós más fuerte, un líder militar que aprendió hechicería gravitacional en Sellia para poder montar a su caballo Leonard sin aplastarlo tras incrementar su tamaño.</p>
+                                <p><strong>Habilidades:</strong> Dominio superior de la magia gravitacional, capacidad de elevación orbital para ejecutar caídas de meteorito cósmico y un manejo impecable de espadas masivas.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Logró detener el movimiento del firmamento con su fuerza gravitacional, manteniéndolo incluso tras perder la cordura por la Putrefacción Escarlata.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ranni -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ranni">
+                        Ranni la Bruja
+                    </button>
+                </h2>
+                <div id="ranni" class="accordion-collapse collapse" data-bs-parent="#accordionSemidioses">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/9mXP5btun6cgKz-eWn7Jiv0Oj6eCuMGbYEJ_cPRIiIg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L0dQ/VWNRamdoVldXeG1I/emFDNXJoeWguanBn" class="boss-img img-fluid rounded" alt="Ranni">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Ranni la Bruja</h4>
+                                <p><strong>Historia:</strong> Empírea que orquestó el robo de la Runa de la Muerte para destruir su cuerpo carne, liberar su espíritu y desencadenar el fin del dominio de la Orden Dorada.</p>
+                                <p><strong>Habilidades:</strong> Conjuros de hechicería lunar, manipulación de magia helada y alteración del destino estelar.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Su alma habita en una muñeca de cuatro brazos diseñada a imagen de su antigua mentora, la bruja de las nieves.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rykard -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rykard">
+                        Rykard, El señor de la Blasfemia
+                    </button>
+                </h2>
+                <div id="rykard" class="accordion-collapse collapse" data-bs-parent="#accordionSemidioses">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/QfQqivgQOaD4UGEliIO-MBxmBAyG6iTq8CZewq_hiac/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0LzR1/Wkt1TXRrWTRWeGZE/emFXenVRUGguanBn" class="boss-img img-fluid rounded" alt="Rykard">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Rykard, Señor de la Blasfemia</h4>
+                                <p><strong>Historia:</strong> Líder de la Mansión del Volcán que consolidó una red de inteligencia estratégica en Las Tierras Intermedias antes de ofrecerse a la Gran Serpiente Devoradioses.</p>
+                                <p><strong>Habilidades:</strong> Control de magias ígneas y blasfemas tras fusionarse con la serpiente, reducción masiva del daño recibido y ataques continuos de gran alcance.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> En su primera fase actúa bajo instintos serpentinos salvajes, mientras que en la segunda toma el control consciente para ejecutar ataques más precisos y calculados.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Godwyn -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#godwyn">
+                        Godwyn, El Dorado
+                    </button>
+                </h2>
+                <div id="godwyn" class="accordion-collapse collapse" data-bs-parent="#accordionSemidioses">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/x60-YgEra1amdUcN9WQ1UmTYANbS__eSY9x9_bIrsdA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/Z29kd3luLXRoZS1n/b2xkZW4tcGFpbnRp/bmctYnktbWUtdjAt/YW11ZmtnM3Z6YXc5/MS5qcGc_d2lkdGg9/NjQwJmNyb3A9c21h/cnQmYXV0bz13ZWJw/JnM9YzMxZGNmOWNk/NjVhOWEyMDUwMWFm/NjUxYjI1MTExYWJi/NTZhNTYzOA" class="boss-img img-fluid rounded" alt="Godwyn">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Godwyn el Dorado</h4>
+                                <p><strong>Historia:</strong> Primogénito de Marika y Godfrey, héroe de la Guerra de los Dragones y principal defensor de Leyndell, cuya muerte desencadenó la propagación de la Necroplaga.</p>
+                                <p><strong>Habilidades:</strong> Maestro en la manipulación del rayo dorado, encantamientos sagrados de alto nivel y regeneración.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Fue la primera víctima semidiosa en perecer durante la Noche de los Cuchillos Negros, asesinado únicamente en espíritu mientras su cuerpo continuó mutando.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Morgott -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#morgott">
+                        Morgott, El Rey de los Augurios
+                    </button>
+                </h2>
+                <div id="morgott" class="accordion-collapse collapse" data-bs-parent="#accordionSemidioses">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/th9S0P1CvTqjZofa8hCDTRoemEd0YjcOT8wpwwk5FWE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGV4ZXJ0by5jb20v/Y2RuLWltYWdlL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIzLzEy/LzA3L2VsZGVuLXJp/bmctbW9yZ290dC10/aGUtb21lbi1raW5n/LmpwZz93aWR0aD0x/MjAwJnF1YWxpdHk9/NzUmZm9ybWF0PWF1/dG8" class="boss-img img-fluid rounded" alt="Morgott">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Morgott, el Rey de los Augurios</h4>
+                                <p><strong>Historia:</strong> A pesar de nacer como un Augurio repudiado y ser confinado al subsuelo, permaneció leal a la capital Leyndell y asumió su protección como rey no reconocido.</p>
+                                <p><strong>Habilidades:</strong> Proyección de armas de luz sagrada (martillos, dagas, lanzas), lluvia de espadas y ritos de sangre maldita.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Utilizaba la identidad de "Margit, el Augurio Caído" para emboscar a los Sinluz fuera de las murallas de Leyndell.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mohg -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mohg">
+                        Mohg, El señor de la sangre
+                    </button>
+                </h2>
+                <div id="mohg" class="accordion-collapse collapse" data-bs-parent="#accordionSemidioses">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/C1CoOcnzEpPhlo2VLvCWs-Cd-GLshijfRsQY0PdhOAc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLnRoZWdhbWVy/aW1hZ2VzLmNvbS93/b3JkcHJlc3Mvd3At/Y29udGVudC91cGxv/YWRzL3dtLzIwMjQv/MDYvZWxkZW4tcmlu/Zy1ob3ctdG8tZGVm/ZWF0LW1vaGctbG9y/ZC1vZi1ibG9vZC1m/ZWF0dXJlZC1pbWFn/ZS5qcGc_cT00OSZm/aXQ9Y29udGFpbiZ3/PTI1MDAmaD0xMjUw/JmRwcj0y" class="boss-img img-fluid rounded" alt="Mohg">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Mohg, Señor de la Sangre</h4>
+                                <p><strong>Historia:</strong> Semidiós Augurio que se alió con la Madre sin Forma para establecer la Dinastía de Mohgwyn en las profundidades del río Siofra.</p>
+                                <p><strong>Habilidades:</strong> Ejecución del ritual de hemorragia "NIHIL!", encantamientos de fuego de sangre y dominio de su tridente sagrado.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Uno de los cuernos característicos de su condición de Augurio creció hacia adentro, perforando y destruyendo su ojo izquierdo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECCIÓN 2: LAS ENTIDADES Y SEÑORES DE LA NOCHE ETERNA -->
+        <h3 class="border-bottom border-warning pb-2 mb-4">II. Las Entidades y Señores de la Noche Eterna</h3>
+        <div class="accordion mb-5" id="accordionEntidades">
+
+            <!-- Gladius -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gladius">
+                        Gladius, La bestia de la noche
+                    </button>
+                </h2>
+                <div id="gladius" class="accordion-collapse collapse" data-bs-parent="#accordionEntidades">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/a5cYRvISrkp56KXdUJ4RSdNYpRkQqDCa7qP7j3it6x0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L05B/TEdSOEpnUzZkV1Nx/VnlDZ2dmNDQuanBn" class="boss-img img-fluid rounded" alt="Gladius">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Gladius, La bestia de la noche</h4>
+                                <p><strong>Historia:</strong> Bestia tricéfala guardiana vinculada a las fuerzas de la Noche Eterna, capaz de desplazarse entre las sombras transformándose en ráfagas de ceniza e ígneas.</p>
+                                <p><strong>Habilidades:</strong> Invocación de llamas de fuego abisal y división en tres manifestaciones espectrales independientes para ataques envolventes.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Sirve directamente como vanguardia de las entidades primigenias de la noche, replicando patrones tácticos de su señor.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adel -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adel">
+                        Adel, El Barón de la Noche
+                    </button>
+                </h2>
+                <div id="adel" class="accordion-collapse collapse" data-bs-parent="#accordionEntidades">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/yo6xlX3asaIr5oEAw13DR_5PgOTEU_0mo09vp5kD57Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnJl/ZGQuaXQvb2R6Yzly/ZWgzb3RmMS5wbmc" class="boss-img img-fluid rounded" alt="Adel">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Adel, Barón de la Noche</h4>
+                                <p><strong>Historia:</strong> Antiguo señor de la guerra híbrido que sufrió mutaciones extremas por exposición a la influencia abisal, desarrollando una estructura fisionómica adaptada al consumo de energía vital.</p>
+                                <p><strong>Habilidades:</strong> Cargas de embestida a alta velocidad, presas con su mandíbula hipertrofiada y drenaje de fuerza para potenciar sus atributos de ataque.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Su coraza externa recubierta de cristal le otorga resistencia física elevada, aunque resulta sumamente susceptible a efectos de veneno y descomposición.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gnoster -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gnoster">
+                        Gnoster, La Sabiduría de la Noche
+                    </button>
+                </h2>
+                <div id="gnoster" class="accordion-collapse collapse" data-bs-parent="#accordionEntidades">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://i.redd.it/nightreign-bosses-gnoster-wisdom-of-night-weapon-entries-v0-q2ii1h8pwd6f1.jpg?width=1920&format=pjpg&auto=webp&s=777ed9958932d3b4687d2f8db91814bbe0b99cff" class="boss-img img-fluid rounded" alt="Gnoster">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Gnoster, La Sabiduría de la Noche</h4>
+                                <p><strong>Historia:</strong> Entidad simbiótica insectoide conformada por dos especímenes (Gnoster y Faurtis), encargada de custodiar el conocimiento prohibido de las eras oscuras.</p>
+                                <p><strong>Habilidades:</strong> Secreción de toxinas venenosas, ataques aéreos con invocación de enjambres y desplazamiento subterráneo para emboscadas.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Tras sufrir daños considerables, ambas entidades se acoplan físicamente para combinar sus habilidades en un solo patrón ofensivo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maris -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#maris">
+                        Maris, La Profundidad de la Noche
+                    </button>
+                </h2>
+                <div id="maris" class="accordion-collapse collapse" data-bs-parent="#accordionEntidades">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/OCkaywIMbhETDLfHCWgjHPEZPsVP0er22r-ET0PET8s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/dXBsb2Fkcy5nYW1l/YmxvZy5mci9pbWcv/c29sdWNlcy82OTc1/NDRfNjg1NTZjZDdj/YzkxOC5qcGc_d2lk/dGg9JmhlaWdodD0m/YXNwZWN0X3JhdGlv/PTomdmVyPTE" class="boss-img img-fluid rounded" alt="Maris">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Maris, Profundidad de la Noche</h4>
+                                <p><strong>Historia:</strong> Ser perteneciente a los "Augures" de las profundidades acuáticas subconscientes, capaz de incitar estados de letargo e ilusionismo en sus oponentes.</p>
+                                <p><strong>Habilidades:</strong> Ondas de choque astrales, proyectiles acuáticos a presión e inducción de efectos de parálisis.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Al verse acorralado, lanza proyectiles de energía adosables que se adhieren a la armadura de la víctima antes de detonar.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Libra -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#libra">
+                        Libra, La Criatura del Equilibrio
+                    </button>
+                </h2>
+                <div id="libra" class="accordion-collapse collapse" data-bs-parent="#accordionEntidades">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/RiehQbiFHPdJlrkdAe1kA5z4J_UJ186r0cy8HO7ZYgQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9rb3Rh/a3UuY29tL2FwcC91/cGxvYWRzLzIwMjUv/MDcvYzNiYjhlNGM3/YTYyN2VhMjU5ZWYy/ZWUwZTdlZDFhNTIu/anBn" class="boss-img img-fluid rounded" alt="Libra">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Libra, Criatura del Equilibrio</h4>
+                                <p><strong>Historia:</strong> Ente espectral orientado a impartir juicios y mantener el balance absoluto en el dominio de las sombras mediante reglas restrictivas.</p>
+                                <p><strong>Habilidades:</strong> Creación de sellos de inmovilización en el suelo, generación de coraza dorada de inmunidad mágica e invocación de guerreros espectrales.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Posee la capacidad de manifestar simultáneamente hasta tres espíritus de héroes caídos para asistirle en combate sin consumir sus reservas de energía.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fulgor -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fulgor">
+                        Fulgor, El Campeón del Brillo Nocturno
+                    </button>
+                </h2>
+                <div id="fulgor" class="accordion-collapse collapse" data-bs-parent="#accordionEntidades">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/_HXb9LaYoW4ZhwuE735TzsKxbuQloUOniq73nx_4nCc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L3Yz/Sm1BU2RTR2VrQ0s1/UTc5WnRnWlMuanBn" class="boss-img img-fluid rounded" alt="Fulgor">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Fulgor, Campeón del Brillo Nocturno</h4>
+                                <p><strong>Historia:</strong> Es el guardián místico que canaliza la energía fosforescente de la noche en las fronteras de las sombras. Fue un general a cargo de mantener a raya el avance de la noche, pero fue traicionado por su propio bando, perdiendo un brazo en una emboscada y vagando por tierras desconocidas, hasta que decidió adentrarse en la noche por completo.</p>
+                                <p><strong>Habilidades:</strong> Utiliza cortes de luz estelar y puede invocar energía oscura que se comporta de manera errática.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Su armadura refleja la luz de las estrellas incluso en la oscuridad del vacío, mientras que su lanza puede moldearse para ser una espada y un arco al mismo tiempo. Además, su diseño está basado en un centauro de la mitología griega.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caligo -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caligo">
+                        Caligo, El Miasma de la Noche
+                    </button>
+                </h2>
+                <div id="caligo" class="accordion-collapse collapse" data-bs-parent="#accordionEntidades">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/uEZsGTBIV9AvLGMK9-gvKssWSNNtHge2rtWJoVym204/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/bmlnaHRyZWlnbi1i/b3NzZXMtY2FsaWdv/LW1pYXNtYS1vZi1u/aWdodC1hbmQtc29t/ZS12MC0yc21kbDE4/MHYxYmYxLmpwZz93/aWR0aD02NDAmY3Jv/cD1zbWFydCZhdXRv/PXdlYnAmcz0yMDY3/ZjQ2MTA4Y2UzMWI1/M2ZmNzliOTViNDUy/MTYxMjgwMGEyYmRj" class="boss-img img-fluid rounded" alt="Caligo">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Caligo, Miasma de la Noche</h4>
+                                <p><strong>Historia:</strong> Durante su vida como dragón antiguo, fue apodado como el "Dragón del témpano helado", ya que fue el más poderoso de los primeros dragones que nacieron con aliento de hielo. Después de morir, tomó la decisión de volverse una manifestación viviente de la oscuridad púrpura que emerge desde las profundidades del abismo, congelando todo a su paso sin dejar nada con vida.</p>
+                                <p><strong>Habilidades:</strong> Nubes de oscuridad púrpura que envenenan a todos los que la respiren y la capacidad de crear tormentas de hielo que congelan de manera inmediata a cualquier ser vivo dentro de su radio de alcance.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> No posee una forma física; se disipa al recibir ataques cortantes de fuego, pero puede crear una armadura de hielo y oscuridad para contrarrestar las llamas más poderosas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Balancers -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#balancers">
+                        Balancers, La Armonía de la Noche
+                    </button>
+                </h2>
+                <div id="balancers" class="accordion-collapse collapse" data-bs-parent="#accordionEntidades">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/MM0Ujjq_Z66GAtKabyL2yobrlc8uQ6ExGAE7eIsMRyI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L01q/RnU1U3ZtRmdiUVAz/N2tSVm5YSGsuanBn" class="boss-img img-fluid rounded" alt="Balancers">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Balancers, La Armonía de la Noche</h4>
+                                <p><strong>Historia:</strong> A diferencia de las entidades anteriores, no fueron corrompidas por la oscuridad: son siete valquirias de armadura blanca que juraron restaurar el equilibrio del mundo y purificar toda la oscuridad que se acerque, manteniendo estrechas las fronteras de la noche.</p>
+                                <p><strong>Habilidades:</strong> Al igual que en el nado sincronizado, ejecutan ataques coordinados con lanzas estelares, manejan magia sagrada para invocar lanzas luminosas en el suelo y atacan dividiéndose: 4 valquirias realizan embestidas aéreas mientras las restantes lanzan ráfagas de luz para darles cobertura.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> A pesar de ser las guardianas del cielo y protegerlo de la noche eterna, albergaban un parásito en su interior que utilizaban como último recurso para ganar. Esto transformaba su apariencia por completo mediante mutaciones violentas que las volvían más salvajes, sufriendo un gran daño si una de ellas caía nuevamente en combate.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Dreglord -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dreglord">
+                        El Señor de la Escoria
+                    </button>
+                </h2>
+                <div id="dreglord" class="accordion-collapse collapse" data-bs-parent="#accordionEntidades">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/VTz55_wR_CMKwCz7Aess1l5Hh1ILTgNutkeQ8Sz0Gm0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/d2hlcmUtd291bGQt/eW91LXJhbmstdGhl/LWRyZWdsb3JkLWFu/ZC1vdGhlci1uaWdo/dHJlaWduLXYwLTAz/cm10MWpvcHQ1ZzEu/anBlZz93aWR0aD02/NDAmY3JvcD1zbWFy/dCZhdXRvPXdlYnAm/cz1hZjI5NjE0NWMz/OGZmNDYzY2Y0ZWZm/YWVmYTFhYWFhOTZj/NzhjZmJl" class="boss-img img-fluid rounded" alt="The Dreglord">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>El Lord o Señor de la Escoria</h4>
+                                <p><strong>Historia:</strong> Un gobernante amorfo compuesto por la materia olvidada que el Árbol Áureo no pudo purificar. Al ser la amalgama de todos los cuerpos y materia orgánica que no pudieron reencarnar, busca destruir todo a su paso y consumir a la mayor cantidad de seres posible.</p>
+                                <p><strong>Habilidades:</strong> Puede causar corrosión de armaduras e invocar clones de sí mismo que escupen materia en descomposición, pus y sangre podrida. En situaciones críticas, puede desprender partes de su cuerpo y lanzarlas como proyectiles que se dividen en el aire liberando gases tóxicos.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Es capaz de absorber cualquier ataque de energía (incluyendo conjuros o ataques mágicos) y convertirlos en proyectiles de carne putrefacta. Además, su capa de piel muerta puede desplegarse como un par de alas para volar a gran velocidad y emboscar desde múltiples ángulos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Heolstor -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#heolstor">
+                        Heolstor, El Señor de la Noche
+                    </button>
+                </h2>
+                <div id="heolstor" class="accordion-collapse collapse" data-bs-parent="#accordionEntidades">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/wkkLlMusbBgFGN5vU2carh6LLTzR2Xf0Rwa-GfLiAyE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/ZXllLW9mLWEtZHlp/bmctd29ybGQtaGVv/bHN0b3ItdGhlLW5p/Z2h0bG9yZC1hcnQt/YnktbWUtdjAtZXhk/ZzJjMmdpMWlnMS5q/cGVnP3dpZHRoPTY0/MCZjcm9wPXNtYXJ0/JmF1dG89d2VicCZz/PTM1MDUxOTk5NTNh/MDM4ODg3M2YxNzE1/ZDY2NTRiNWJiNTc1/MzM0MWE" class="boss-img img-fluid rounded" alt="Heolstor">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Heolstor, Señor de la Noche</h4>
+                                <p><strong>Historia:</strong> Es el primero que existió, el gran soberano de las sombras que domina los cielos inaccesibles para la luz de la Gracia dorada. Fue el responsable de desatar la oscuridad de la noche por las Tierras Intermedias, arrasando con todo a su paso y corrompiendo el mundo entero.</p>
+                                <p><strong>Habilidades:</strong> Utiliza la energía de la nada para manifestar magia del vacío. Puede canalizar elementos como hielo, fuego, rayo y veneno, e incluso materializar haces de luz en materia sólida, sumado a la capacidad de teletransportarse instantáneamente.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Ataca con mayor ferocidad cuando el rival no lleva antorchas o alguna fuente de luz. Además, puede invocar los poderes de todos los jefes anteriores, dominando cada elemento y consolidándose como el ser de la noche más poderoso que ha existido.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECCIÓN 3: LOS JEFES ACLAMADOS POR LA AUDIENCIA -->
+        <h3 class="border-bottom border-warning pb-2 mb-4 mt-5">III. Jefes Aclamados por la Audiencia</h3>
+        <div class="accordion mb-5" id="accordionAclamados">
+
+            <!-- Soldado de Godrick -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#godrickSoldier">
+                        El Soldado de Godrick
+                    </button>
+                </h2>
+                <div id="godrickSoldier" class="accordion-collapse collapse" data-bs-parent="#accordionAclamados">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/YSlZ2-0sgGwPniEO7Y59kyPZsA5OQFVdk9dgtEfMvVU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbGRl/bnJpbmcud2lraS5m/ZXh0cmFsaWZlLmNv/bS9maWxlL0VsZGVu/LVJpbmcvZ29kcmlj/a19zb2xkaWVyX2Vu/ZW1pZXNfZWxkZW5f/cmluZ193aWtpXzYw/MHB4LmpwZw" class="boss-img img-fluid rounded" alt="Soldado de Godrick">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Soldado de Godrick</h4>
+                                <p><strong>Historia:</strong> El guardián que resguarda la Cueva del Conocimiento (tutorial). Se convirtió en un ícono dentro de la comunidad por representar la primera prueba de combate del juego.</p>
+                                <p><strong>Habilidades:</strong> Domina un estilo de combate basado en esgrima básica con espada recta y guardia con escudo.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Protagonista de innumerables memes en la comunidad: aunque técnicamente es el jefe más débil, los jugadores le atribuyen en broma un poder "divino e imbatible".
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Godfrey -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#godfrey">
+                        Godfrey, El primer señor del Círculo
+                    </button>
+                </h2>
+                <div id="godfrey" class="accordion-collapse collapse" data-bs-parent="#accordionAclamados">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/kXArXNHSHtxWpCQrDNjxwo-9Y7t7twNJUIIV0FZvGC8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYWxwaGFjb2Rl/cnMuY29tLzEyMS90/aHVtYi0xOTIwLTEy/MTY2NzguanBn" class="boss-img img-fluid rounded" alt="Godfrey">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Godfrey, Primer Señor del Círculo / Hoarah Loux</h4>
+                                <p><strong>Historia:</strong> Un guerrero que no contaba con bendiciones mágicas ni dones divinos, lo cual no le impidió convertirse en la figura más temida de las Tierras Intermedias por su destreza en combate. Fue el primer Señor del Círculo y el líder bárbaro que doblegó a los Gigantes de Fuego.</p>
+                                <p><strong>Habilidades:</strong> Su fuerza descomunal le permite generar terremotos y ondas expansivas con pisotones que aturden a sus rivales. Blande un hacha gigante mediante un estilo de combate sumamente agresivo.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Lleva en su espalda al espíritu del león Serosh para reprimir su insaciable sed de sangre. Al desprenderse de él, abandona sus armas para luchar a mano limpia bajo su verdadera identidad: "Hoarah Loux".
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Astel -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#astel">
+                        Astel, La Aberración nacida del Vacío
+                    </button>
+                </h2>
+                <div id="astel" class="accordion-collapse collapse" data-bs-parent="#accordionAclamados">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/QC-Vx3snwfgc4BiHNDWjwFtlalSBNgWAfBKMKqWbj34/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmZleHRyYWxp/ZmVpbWFnZXMuY29t/L2ZpbGUvZWxkZW5y/aW5nLzUvNTgvQXN0/ZWwtbmF0dXJhbGJv/cm4tb2YtdGhlLXZv/aWQtMS1lbGRlbi1y/aW5nLXdpa2ktZ3Vp/ZGUucG5n" class="boss-img img-fluid rounded" alt="Astel">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Astel, La Aberración nacida del Vacío</h4>
+                                <p><strong>Historia:</strong> Una criatura estelar nacida en las profundidades del espacio que impactó como meteorito en las Tierras Intermedias, destruyendo una Ciudad Eterna.</p>
+                                <p><strong>Habilidades:</strong> Manipula rayos láser gravitacionales, genera ondas de choque masivas y proyecta ilusionismo mediante clones en combate.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> En el centro de sus mandíbulas de insecto se aprecia un cráneo de rasgo humanoide, lo que sugiere una posible transformación provocada por la energía cósmica de las estrellas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Placidusax -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#placidusax">
+                        El Señor Dragón, Placidusax
+                    </button>
+                </h2>
+                <div id="placidusax" class="accordion-collapse collapse" data-bs-parent="#accordionAclamados">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/bJCHLdxYZm6NDUIOrNM8ff6w3DasPyIdA873yBfCLAg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXM3LmFscGhhY29k/ZXJzLmNvbS8xNDAv/dGh1bWItMTkyMC0x/NDA3MDkzLmpwZw" class="boss-img img-fluid rounded" alt="Placidusax">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Señor Dragón Placidusax</h4>
+                                <p><strong>Historia:</strong> Fue el Señor del Círculo en la era previa al Árbol Áureo. Reposa atemporalmente en el centro de una tempestad fuera del tiempo en Farum Azula.</p>
+                                <p><strong>Habilidades:</strong> Canaliza la tormenta para invocar rayos rojos, exhala aliento de fuego dorado y se desplaza entre las nubes del tiempo mediante teletransportación.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Poseía originalmente 5 cabezas, de las cuales perdió 3 durante una encarnizada batalla contra "Bayle, el Temible" por el dominio de los dragones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bayle -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bayle">
+                        Bayle, El Temible
+                    </button>
+                </h2>
+                <div id="bayle" class="accordion-collapse collapse" data-bs-parent="#accordionAclamados">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/3-NpY1hnCLMD7C5l0jTYg4S64yQVsfYm6G9gamJlInQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/bXktdGFrZS1vbi1i/YXlsZS10aGUtZHJl/YWQtYW5kLWlnb24t/djAtZzgxMnA2b2hy/Zm1kMS5qcGVnP3dp/ZHRoPTY0MCZjcm9wPXNtYXJ0JmF1dG89d2VicCZzPTQ3NDA1/NmI2Nzk3YmZjZDc5/OWU3OGI1ODg5NGZl/ZTlmYjgwOWYzMTI" class="boss-img img-fluid rounded" alt="Bayle">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Bayle, El Temible</h4>
+                                <p><strong>Historia:</strong> Reconocido como uno de los dragones más despiadados. Tras desafiar el liderazgo de Placidusax, terminó gravemente mutilado pero logró arrebatarle tres cabezas a su rival.</p>
+                                <p><strong>Habilidades:</strong> Genera tormentas de fuego y rayos. Al haber perdido sus alas orgánicas durante la contienda ancestral, es capaz de manifestar alas de energía pura para volar.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> En su lomo aún se aprecian incrustadas las cabezas cercenadas de Placidusax como cicatriz permanente de su enfrentamiento.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maliketh -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#maliketh">
+                        Maliketh, El Portador de la Hoja Negra
+                    </button>
+                </h2>
+                <div id="maliketh" class="accordion-collapse collapse" data-bs-parent="#accordionAclamados">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/wqvSMtV0GS8RQm_-GPaT2iY9YZAn7tbHE_PMGZmMm1I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGV4ZXJ0by5jb20v/Y2RuLWltYWdlL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzA0/LzExL0hvdy10by1k/ZWZlYXQtTWFsaWtl/dGgtdGhlLUJsYWNr/LUJsYWRlLmpwZz93/aWR0aD0xMjAwJnF1/YWxpdHk9NjAmZm9y/bWF0PWF1dG8" class="boss-img img-fluid rounded" alt="Maliketh">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Maliketh, La Hoja Negra</h4>
+                                <p><strong>Historia:</strong> Sombra fiel y guardián asignado a la Reina Marika. Se le encomendó custodiar la Runa de la Muerte, infundiendo temor incluso entre los propios semidioses.</p>
+                                <p><strong>Habilidades:</strong> Desata proyectiles imbuidos con la Muerte Destinada que reducen paulatinamente la salud máxima del adversario, complementado con una agilidad acrobática en combate.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Oculta su identidad bajo el disfraz de "Gurranq, el Clérigo Bestia" en Caelid para vigilar los fragmentos de la Runa de la Muerte tras el robo perpetrado por Ranni.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Radahn Consorte -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#radahnConsort">
+                        Radahn, Consorte Prometido
+                    </button>
+                </h2>
+                <div id="radahnConsort" class="accordion-collapse collapse" data-bs-parent="#accordionAclamados">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="https://imgs.search.brave.com/3Jv3FBWifcy8OUbXwV9KpILHjzZtuxxY6EW4rDMeEBs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmdhbWVyYW50/aW1hZ2VzLmNvbS93/b3JkcHJlc3Mvd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDYv/cmFkYWhuLWNvbnNv/cnQtb2YtbWlxdWVs/bGEtcGhhc2UtMi1p/bi1lbGRlbi1yaW5n/LWRsYy1zaGFkb3ct/b2YtdGhlLWVyZHRy/ZWUtc290ZS5qcGc_/cT00OSZmaXQ9Y3Jv/cCZ3PTgyNSZkcHI9/Mg" class="boss-img img-fluid rounded" alt="Radahn Consorte">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Radahn, Consorte Prometido</h4>
+                                <p><strong>Historia:</strong> Reencarnado en la Tierra de las Sombras mediante un rito ancestral para asumir el rol de consorte de Miquella en su nueva era divina.</p>
+                                <p><strong>Habilidades:</strong> Combina ataques gravitacionales masivos con ráfagas de luz divina a gran velocidad.</p>
+                                <div class="fact-box">
+                                    <strong>Dato Curioso:</strong> Durante su segunda fase, Miquella se une directamente a su espalda para potenciar sus embates con pilares de luz celestial.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botones de Navegación Secundaria -->
+        <div class="row mt-4 g-2">
+            <div class="col-md-6">
+                <a href="peticiones.html" class="btn btn-elden btn-lg w-100 fs-6">Ahora que ya los conoces, solicita tu figura coleccionable.</a>
+            </div>
+            <div class="col-md-6">
+                <a href="index.html" class="btn btn-secondary btn-lg w-100 fs-6">Volver al inicio</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-light mt-auto">
+        <div class="container">
+            <p class="mb-0 fs-5">&copy; 2026 Compendio Sin Luz - Colección Oficial de las Tierras Intermedias.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
